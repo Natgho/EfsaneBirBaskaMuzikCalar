@@ -14,6 +14,7 @@
         android:layout_marginBottom="10dp"
         android:src="@drawable/dj_image"/>
     <TextView
+        android:id="@+id/tvMusicTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Yalova Universitesi"
@@ -25,21 +26,25 @@
         android:background="#9575CD">
 
         <ImageButton
+            android:id="@+id/ibStart"
             android:layout_width="70dp"
             android:layout_height="match_parent"
             android:src="@android:drawable/ic_media_play"/>
 
         <ImageButton
+            android:id="@+id/ibPause"
             android:layout_width="70dp"
             android:layout_height="match_parent"
             android:src="@android:drawable/ic_media_pause"/>
 
         <ImageButton
+            android:id="@+id/ibNext"
             android:layout_width="70dp"
             android:layout_height="match_parent"
             android:src="@android:drawable/ic_media_next"/>
 
         <ImageButton
+            android:id="@+id/ibMusicList"
             android:layout_width="70dp"
             android:layout_height="match_parent"
             android:src="@android:drawable/ic_menu_directions"/>
