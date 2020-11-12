@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
@@ -55,10 +56,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             }
             case R.id.ibNext: {
-                if (mediaPlayer.isPlaying()){
+                if (mediaPlayer.isPlaying()) {
                     mediaPlayer.stop();
                 }
-                if (currentMusic < musicList.size() -1) {
+                if (currentMusic < musicList.size() - 1) {
                     currentMusic += 1;
                 } else {
                     currentMusic = 0;
@@ -76,6 +77,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             }
             case R.id.ibMusicList: {
+                // TODO muzik listesi ozelligini ekle
+                Toast.makeText(this, "Bu ozellik yakinda gelecek!", Toast.LENGTH_SHORT).show();
                 Log.d("MuzikCalar", "onClick: Music List");
                 break;
             }
